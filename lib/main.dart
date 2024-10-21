@@ -24,7 +24,11 @@ class MyApp extends StatelessWidget {
               Get.snackbar("SnackBar Title", "This is SnackBar",
                   snackPosition: SnackPosition.BOTTOM,
                   colorText: Colors.white,
-                  animationDuration: const Duration(milliseconds: 3000),
+                  animationDuration: const Duration(
+                    milliseconds: 3000,
+                  ),
+                  isDismissible: true,
+                  dismissDirection: DismissDirection.horizontal,
                   backgroundColor: Colors.black);
             },
             child: Icon(Icons.abc),
