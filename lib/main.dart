@@ -30,9 +30,19 @@ class MyApp extends StatelessWidget {
                   isDismissible: true,
                   dismissDirection: DismissDirection.horizontal,
                   forwardAnimationCurve: Curves.bounceInOut,
+                  icon: const Icon(
+                    Icons.send,
+                    color: Colors.white,
+                    size: 15,
+                  ),
+                  userInputForm: Form(child: TextFormField()),
+                  mainButton: TextButton(
+                    onPressed: () {},
+                    child: const Text("retry"),
+                  ),
                   backgroundColor: Colors.black);
             },
-            child: Icon(Icons.abc),
+            child: const Icon(Icons.add),
           ),
         ),
       ),
