@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
               Get.snackbar(
                 "SnackBar Title",
                 "This is SnackBar",
+                snackPosition: SnackPosition.BOTTOM
               );
             },
             child: Icon(Icons.abc),
