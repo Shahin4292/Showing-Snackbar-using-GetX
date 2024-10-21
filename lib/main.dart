@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
                   ),
                   isDismissible: true,
                   dismissDirection: DismissDirection.horizontal,
+                  forwardAnimationCurve: Curves.bounceInOut,
                   backgroundColor: Colors.black);
             },
             child: Icon(Icons.abc),
