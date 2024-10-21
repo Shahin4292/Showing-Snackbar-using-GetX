@@ -21,11 +21,11 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: ElevatedButton(
             onPressed: () {
-              Get.snackbar(
-                "SnackBar Title",
-                "This is SnackBar",
-                snackPosition: SnackPosition.BOTTOM
-              );
+              Get.snackbar("SnackBar Title", "This is SnackBar",
+                  snackPosition: SnackPosition.BOTTOM,
+                  colorText: Colors.white,
+                  animationDuration: const Duration(milliseconds: 3000),
+                  backgroundColor: Colors.black);
             },
             child: Icon(Icons.abc),
           ),
